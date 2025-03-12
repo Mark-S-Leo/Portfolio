@@ -1,0 +1,83 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    transition: background 100ms ease-in-out;
+}
+
+p, h1 {
+    color: var(--primary-text-color);
+}
+
+.row {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.img {
+    width: 80%;
+    height: auto; /* Adjust height to be auto */
+    max-height: 200px; /* Set a maximum height */
+    border-radius: 40px;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: flex-start; /* Align image to the top */
+    justify-content: center;
+    height: auto; /* Adjust height to be auto */
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    @media (min-width: 320px) and (max-width: 375px) {
+        flex-direction: column !important;
+    }
+}
+
+.about {
+    border: 1pt solid var(--card-color);
+    height: 20vh;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px;
+    width: 40%;
+    background-color: var(--card-color);
+    color: var(--primary-text-color); /* Set text color */
+
+    @media (min-width: 320px) and (max-width: 375px) {
+        height: 20vh !important;
+        width: 90% !important;
+    }
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: var(--primary-text-color); /* Set icon color */
+}
+
+.content {
+    margin-bottom: 5px;
+    color: var(--primary-text-color); /* Set text color */
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.textContainer {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    color: var(--primary-text-color); /* Set heading color */
+}

@@ -1,0 +1,64 @@
+.navbar {
+  background-color: var(--navbar-color);
+}
+
+.navbar a, .navbar h5 {
+  color: var(--primary-text-color);
+}
+
+.item:hover a {
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-style: none;
+  text-decoration-thickness: 0.8pt;
+  text-underline-offset: 3pt;
+  color: var(--primary-text-color) !important; 
+}
+
+.toggleSwitch {
+  width: 50px;
+  height: 25px;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-left: auto; 
+
+  .toggleCircle {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.toggleSwitch.dark {
+  background-color: #444;
+
+  .toggleCircle {
+    background-color: #222;
+    color: white;
+    transform: translateX(25px);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .toggleSwitch {
+    margin-top: 10px;
+  }
+}

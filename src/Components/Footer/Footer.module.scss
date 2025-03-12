@@ -1,0 +1,35 @@
+.footer {
+  padding: 10px 0; /* Adjust padding for smaller screens */
+  text-align: center;
+  background: var(--card-color);
+
+  .navLinks {
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    a {
+      margin: 2vw;
+      text-decoration: none;
+      color: var(--primary-text-color) !important;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--text-hover)!important;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .navLinks a {
+      margin: 0 15px;
+      font-size: 18px;
+    }
+  }
+}

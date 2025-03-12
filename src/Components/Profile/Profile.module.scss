@@ -1,0 +1,93 @@
+/* filepath: /d:/Portfolio/portfolio/src/Profile/Profile.module.scss */
+.container {
+    margin-top: 20px;
+    height: 85vh;
+    box-shadow: 20px 20px 20px 10px var(--card-shadow);
+    border-radius: 30px;
+    margin-bottom: 10vh;
+    background-color: var(--card-color);
+    transition: background 100ms ease-in-out;
+
+    @media (min-width:320px) and (max-width: 375px){
+      height: 83vh;
+    }
+    @media (min-width: 2560px){
+      height: 40vh;
+    }
+  }
+  .text{
+    color: var(--primary-text-color);
+  }
+  
+  .profileImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .profileImage {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    @media (min-width:320px) and (max-width: 375px){
+      height: 300px;
+      width: 300px;
+    }
+    @media  (max-width: 768px){
+      height: 300px;
+      width: 300px;
+    }
+  }
+  
+  .button1 {
+    border: 1pt solid black;
+    background-color: white;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: medium;
+    font-weight: bold;
+    margin-right: 20px;
+    
+  
+    &:hover {
+      background-color: hsl(0, 2%, 18%);
+      color: white;
+    }
+  
+    &:active {
+      background-color: hsl(0, 2%, 8%);
+      color: white;
+    }
+  }
+  
+  .button2 {
+    border: none;
+    background-color: black;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 20px;
+    color: white;
+    font-weight: 500;
+  
+    &:hover {
+      background-color: hsl(0, 1%, 28%);
+      color: white;
+    }
+  }
+  
+  .social {
+    font-size: 33px;
+    text-decoration: none;
+    color: var(--icon-color);
+    margin-right: 5px;
+  }
