@@ -20,7 +20,7 @@ function About() {
     useEffect(() => {
         const fetchedEducation = [
             { degree: "IGCSE O' level" },
-            {},
+            { degree: "Diploma in Software Engineering" },
             {},
         ];
         setEducation(fetchedEducation);
