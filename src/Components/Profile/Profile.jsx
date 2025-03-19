@@ -14,8 +14,10 @@ function Profile() {
         <div className="col-md-6">
           <h2 className={styles.text}>Swan Yee Htet</h2>
           <p className={styles.text}>Front-end Developer</p>
-          <a href='../Swan Yee Htet_CV Form.pdf' target='_blank'><button type="button" className={styles.button1}>Download CV</button></a>
-          <button type='button' className={styles.button2}>Contact Info</button><br />
+          <button type="button" className={styles.button1} onClick={() => window.open('/assets/Swan_Yee_Htet_CV_Form.pdf', '_blank')}>Download CV</button>
+          <a href="#contact">
+            <button type='button' className={styles.button2}>Contact Info</button>
+          </a><br />
           <section className={`mt-2 mb-5`}>
             <a href='https://www.linkedin.com/in/swan-yee-htet-65804b33a/'><FaLinkedin className={styles.social} /></a>
             <a href='https://github.com/Mark-S-Leo'><FaGithubSquare className={styles.social} /></a>
