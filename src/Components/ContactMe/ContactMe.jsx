@@ -8,7 +8,7 @@ function ContactMe() {
   const [showSocial, setShowSocial] = useState(false);
 
   return (
-    <div className="container-fluid">
+    <div id="contact-me" className="container-fluid"> {/* Add id attribute here */}
       <p className="text-center mb-0 mt-5">Get in Touch</p>
       <h1 className="text-center">Contact Me</h1>
 
