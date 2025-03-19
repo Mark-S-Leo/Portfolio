@@ -15,7 +15,7 @@ p, h1 {
 }
 
 .img {
-    width: 80%;
+    width: 100%;
     height: auto; /* Adjust height to be auto */
     max-height: 200px; /* Set a maximum height */
     border-radius: 40px;
@@ -26,6 +26,7 @@ p, h1 {
     align-items: flex-start; /* Align image to the top */
     justify-content: center;
     height: auto; /* Adjust height to be auto */
+    
 }
 
 .rightColumn {
@@ -44,12 +45,12 @@ p, h1 {
 
 .about {
     border: 1pt solid var(--card-color);
-    height: 20vh;
+    height: auto;
     border-radius: 30px;
     text-align: center;
     margin: 10px 20px;
     padding: 10px;
-    width: 40%;
+    width: 80%;
     background-color: var(--card-color);
     color: var(--primary-text-color); /* Set text color */
 

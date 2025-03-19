@@ -7,9 +7,14 @@
     margin-bottom: 10vh;
     background-color: var(--card-color);
     transition: background 100ms ease-in-out;
+    
+    @media (min-width:0px) and (max-width: 768px){
+      box-shadow: 00px 20px 20px 10px var(--card-shadow);
+    }
 
     @media (min-width:320px) and (max-width: 375px){
       height: 83vh;
+     
     }
     @media (min-width: 2560px){
       height: 40vh;

@@ -31,10 +31,10 @@ function About() {
             <p className="text-center mb-0">Get To Know More</p>
             <h1 className="text-center mt-0 mb-4">About me</h1>
             <div className={`row ${styles.row}`}>
-                <div className={`col-md-5 ${styles.imgContainer}`}>
+                <div className={`col-md-4 ${styles.imgContainer}`}>
                     <img src="./Project_Image/Pure_blue.webp" alt="profile_picture" className={styles.img}></img>
                 </div>
-                <div className={`col-md-7 ${styles.rightColumn}`}>
+                <div className={`col-md-8 ${styles.rightColumn}`}>
                     <div className={styles.aboutContainer}>
                         <div className={styles.about}>
                             <MdWorkHistory className={styles.icon} />

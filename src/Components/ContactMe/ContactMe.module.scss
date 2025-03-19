@@ -7,7 +7,11 @@
     align-items: center;
     justify-content: space-between; /* Distribute space between elements */
     border-radius: 20px;
-     background-color: var(--social-row-color);
+    background-color: var(--social-row-color);
+
+    span{
+        font-size: 2vh;
+    }
 
     @media (min-width:1024px){
         width: 60%;
@@ -16,6 +20,11 @@
         width: 100%;
         height: auto;
         margin-top: 10px;
+    }
+    @media (min-width:320px) and (max-width:425px){
+        span{
+            font-size: 3vw;
+        }
     }
 }
 
