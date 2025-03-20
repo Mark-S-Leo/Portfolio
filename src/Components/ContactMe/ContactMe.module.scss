@@ -2,14 +2,18 @@
     width: 50%;
     border: 1pt solid black;
     margin-top: 20px;
-    height: 60px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distribute space between elements */
     border-radius: 20px;
     background-color: var(--social-row-color);
 
-    span{
+    .contactText {
+        font-size: 3vh;
+        
+    }
+    .socialText{
         font-size: 2vh;
     }
 
@@ -17,16 +21,35 @@
         width: 60%;
     }
     @media (min-width:320px) and (max-width: 768px) {
-        width: 100%;
-        height: auto;
+        width: 70%;
         margin-top: 10px;
+        .contactText {
+            font-size: 1.4vh;
+        }
+        .socialText{
+            font-size: 1.5vh;
+        }
+    }
+    @media (min-width:768px) and (max-width:1024px){
+       
+        .contactText {
+            font-size: 2.5vh;
+        }
+        .socialText{
+            font-size: 1.5vh;
+        }
     }
     @media (min-width:320px) and (max-width:425px){
+        width: 95%;
         span{
             font-size: 3vw;
         }
+        .socialText{
+            font-size: 1vh!important;
+        }
     }
 }
+
 
 .showMore {
     display: flex;

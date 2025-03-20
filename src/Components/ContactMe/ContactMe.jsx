@@ -16,18 +16,18 @@ function ContactMe() {
         <div className={`col-md-12 ${styles.row}`}>
           <a href="mailto:marksleo321@gmail.com" className={styles.contact}>
             <FaEnvelope className="me-3" />
-            <span>marksleo321@gmail.com</span>
+            <span className={styles.contactText}>marksleo321@gmail.com</span>
           </a>
           <a href="https://github.com/Mark-S-Leo" className={styles.contact}>
             <FaGithub className="me-3" />
-            <span>GitHub</span>
+            <span className={styles.contactText}>GitHub</span>
           </a>
 
           <div 
                className={styles.showMore} 
                 onClick={() => setShowSocial(!showSocial)}
           >
-              <span>{showSocial ? "Hide Socials" : "Show More"}</span>
+              <span className={styles.socialText}>{showSocial ? "Hide Socials" : "Show More"}</span>
               <FaChevronDown className={showSocial ? styles.rotated : styles.arrow} />
           </div>
 
