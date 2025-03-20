@@ -6,6 +6,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 function Profile() {
   return (
+    
     <div className={`container align-items-center justify-content-center ${styles.container}`}>
       <div className="row h-100 align-items-center justify-content-center text-center">
         <div className={`col-md-5 ${styles.profileImageContainer}`}>
@@ -14,7 +15,7 @@ function Profile() {
         <div className="col-md-6">
           <h2 className={styles.text}>Swan Yee Htet</h2>
           <p className={styles.text}>Front-end Developer</p>
-          <button type="button" className={styles.button1} onClick={() => window.open('https://github.com/Mark-S-Leo/Portfolio/blob/master/public/Swan%20Yee%20Htet_CV%20Form.pdf', '_blank')}>Download CV</button>
+          <button type="button" className={styles.button1} onClick={() => window.open('https://swanportfolio.vercel.app/assets/Swan_Yee_Htet_CV_Form.pdf', '_blank')}>Download CV</button>
           <a href="#contact">
             <button type='button' className={styles.button2}>Contact Info</button>
           </a><br />
